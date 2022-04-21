@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* fundo da tela */
+
+html{
+    width: 100vw; /* Estamos pegando a altura e largura da tela toda */
+    height: 100vw;
+    font-size: 62.5%;
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background: linear-gradient(rgba(17, 17 , 17 , 0.8), rgba(20, 20, 20 , 1)), url(/img/img5.jpg);  /* Deixa a imagem de fundo com um degradê */
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat; /* Para a imagem não se repetir no fundo */
+}
+
+/* Menu - Header - Navbar */
+
+header {
+    width: 100%; /* Vai pegar a largura inteira da tela */
+    height: 7vh; /* Da Tela inteira 7 viewport será dedicado ao cabeçalho */
+    background-color: rgba(22, 22, 22, 0.2);
+}
+
+.container{
+    text-transform: uppercase; /* Joga todas as letras do cabeçalho para maiuscula */
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:1.8rem; /* é o mesmo que 18px */
+}
+
+.logo{
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem; /*Distanciamento entre as letras da logo */
+    cursor: pointer;
+}
+
+.container .list-itens{
+    display: flex; /* deixa os elementos um ao lado do outro */
+    list-style: none; /* Retira o indicador de lista não ordenada */
+    gap: 20px; /* Tera um distanciamento de 20px entre os elementos */
+}
+
+.container .list-itens a{
+    text-decoration: none; /* Retira o sobrinhando dos links */
+    color: white;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.container .list-itens a:before{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:0px;
+    height: 1px;
+    background-color: rgb(251,255,0);
+    transition: all 1s ease;
+}
+
+.container .list-itens a:hover:before{
+    width:100px;
+}
+
+/* Centro - Conteudo principal */
+
+main{
+    height:93vh; /* Foi colocado 93 viewport , pois ja foi utilizado 7 na tag header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
