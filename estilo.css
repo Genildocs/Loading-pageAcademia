@@ -61,6 +61,10 @@ header {
     position: relative;
 }
 
+.container .list-itens a:hover{
+    color: rgb(251, 255, 0);
+}
+
 .container .list-itens a:before{
     content: " ";
     position: absolute;
@@ -68,7 +72,7 @@ header {
     left: 0;
     width:0px;
     height: 1px;
-    background-color: rgb(251,255,0);
+    background-color: rgb(251, 255, 0);
     transition: all 1s ease;
 }
 
@@ -91,3 +95,81 @@ main{
     justify-content:center;
     align-items: center;
 }
+
+/* Textos conteudo principais */
+
+.primary-text{
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.second-text{
+    margin-bottom:7rem;
+    font-size: 2rem;
+    color: #909599;
+    text-transform: uppercase;
+}
+
+/* Botoes */
+
+.btns{
+    display: flex;
+    justify-content:center;
+    gap: 20px; /* Separa o elementos */
+}
+
+.btns button{
+    width: 250px;
+    height:60px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color:transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem; /* distancia entre as letras */
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+}
+
+.btns button:hover{
+    color: rgb(251, 255, 0);
+    border: none;
+}
+
+.btns button:before{
+    content: ' ';
+    bottom:0;
+    left:0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: #909599 ;
+    z-index: -1; /* Deixa o efeito na parte de trás do texto */
+    transition: 1s;
+    border-radius: 20px;
+}
+
+.btns button:hover:before{
+    width: 100%;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 850px;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+footer img{
+    width:40px;
+    
+}
+
