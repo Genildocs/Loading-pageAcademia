@@ -1,5 +1,6 @@
-# Pagina clone de um laytou de academia.
+# Layout pagina home academia.
 
-### Foi estilizado em css3
+### Foi utilizado linguagem de marcação HTML5 e estilizado em CSS3
 
-### Marcação HTML5
+
+
