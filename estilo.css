@@ -14,6 +14,8 @@ html{
     font-size: 62.5%;
     color: rgb(255, 255, 255);
     font-family: 'Lato', sans-serif;
+    
+    
 }
 
 body{
@@ -22,6 +24,7 @@ body{
     background-size: cover;
     background-position-y: 0px;
     background-repeat: no-repeat; /* Para a imagem não se repetir no fundo */
+    background-color:#909599
 }
 
 /* Menu - Header - Navbar */
@@ -158,7 +161,7 @@ main{
     
 }
 
-footer{
+.footer{
     display: flex;
     justify-content: center;
     font-size: 25px;
@@ -166,10 +169,12 @@ footer{
     align-items: center;
     gap: 20px;
     font-family: 'Lato', sans-serif;
-}
-
-footer img{
-    width:40px;
+    
+    
     
 }
 
+.footer img{
+    width:40px;
+    
+}
